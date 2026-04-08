@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  background: #fffaf5;
+}
+
+.hero {
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+              url('https://images.unsplash.com/photo-1529636798458-92182e662485');
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+}
+
+.verse {
+  margin-top: 10px;
+  font-style: italic;
+}
+
+.invite {
+  padding: 40px;
+}
+
+.details .card {
+  background: white;
+  margin: 20px auto;
+  padding: 20px;
+  width: 280px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+}
+
+.countdown {
+  background: #f3e5e5;
+  padding: 30px;
+}
+
+#timer {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.rsvp a {
+  background: maroon;
+  color: white;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+footer {
+  background: #222;
+  color: white;
+  padding: 20px;
+}
