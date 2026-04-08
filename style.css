@@ -1,64 +1,120 @@
-body {
+* {
   margin: 0;
-  font-family: 'Poppins', sans-serif;
-  text-align: center;
-  background: #fffaf5;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #fffaf5;
+  color: #333;
+}
+
+/* HERO */
 .hero {
   height: 100vh;
-  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
-              url('https://images.unsplash.com/photo-1529636798458-92182e662485');
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+              url('https://images.unsplash.com/photo-1519225421980-715cb0215aed');
   background-size: cover;
+  background-position: center;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
+  text-align: center;
 }
 
-.hero h1 {
-  font-family: 'Playfair Display', serif;
+.hero-content h1 {
+  font-family: 'Cinzel', serif;
   font-size: 3rem;
+  color: gold;
+}
+
+.heart {
+  font-size: 2rem;
+  margin: 10px;
 }
 
 .verse {
-  margin-top: 10px;
-  font-style: italic;
+  margin: 20px 0;
+  color: #eee;
 }
 
-.invite {
-  padding: 40px;
+.hero button {
+  padding: 12px 25px;
+  border: none;
+  background: gold;
+  color: black;
+  border-radius: 25px;
+  cursor: pointer;
 }
 
-.details .card {
-  background: white;
-  margin: 20px auto;
-  padding: 20px;
-  width: 280px;
-  border-radius: 12px;
-  box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+/* SECTIONS */
+section {
+  padding: 60px 20px;
+  text-align: center;
 }
 
-.countdown {
-  background: #f3e5e5;
+/* GLASS CARD */
+.card {
+  backdrop-filter: blur(10px);
+  background: rgba(255,255,255,0.7);
   padding: 30px;
+  border-radius: 15px;
+  max-width: 320px;
+  margin: auto;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+}
+
+.map-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: maroon;
+  color: white;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+/* COUNTDOWN */
+.countdown {
+  background: #f8e8e8;
 }
 
 #timer {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: bold;
+  margin-top: 15px;
 }
 
+/* RSVP */
 .rsvp a {
-  background: maroon;
-  color: white;
-  padding: 12px 25px;
+  padding: 12px 30px;
+  background: gold;
+  color: black;
+  border-radius: 25px;
   text-decoration: none;
-  border-radius: 8px;
 }
 
+/* FOOTER */
 footer {
-  background: #222;
+  background: #111;
   color: white;
   padding: 20px;
+}
+
+.tamil {
+  margin-top: 10px;
+  color: #ccc;
+}
+
+/* ANIMATION */
+.fade {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 1s;
+}
+
+.fade.show {
+  opacity: 1;
+  transform: translateY(0);
 }
